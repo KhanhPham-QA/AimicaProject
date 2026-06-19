@@ -15,10 +15,20 @@ Dự án automation test cho hệ thống Aimica (bao gồm UI test với Seleni
 - Allure TestNG (v2.29.1)
 
 ## Cấu hình
-Thông tin cấu hình nằm ở file `src/test/resources/config/config.properties`:
-- URL: Link môi trường test.
-- TEST_PHONE: Số điện thoại test.
-- TEST_OTP: Mã OTP test mặc định (000000).
+Dự án sử dụng file cấu hình để chạy test. Để chuẩn bị môi trường chạy:
+1. Sao chép (copy) file cấu hình mẫu:
+   ```bash
+   # Nếu dùng macOS/Linux/Git Bash:
+   cp src/test/resources/config/config.properties.example src/test/resources/config/config.properties
+   
+   # Nếu dùng Windows PowerShell:
+   Copy-Item src/test/resources/config/config.properties.example src/test/resources/config/config.properties
+   ```
+2. Mở file `src/test/resources/config/config.properties` vừa tạo và điền các thông tin:
+   - `URL`: Link môi trường test.
+   - `TEST_PHONE`: Số điện thoại test.
+   - `TEST_OTP`: Mã OTP test mặc định (000000).
+
 
 ## Cách chạy test
 Chạy toàn bộ test:
