@@ -15,7 +15,10 @@ Dự án automation test cho hệ thống Aimica (bao gồm UI test với Seleni
 - Allure TestNG (v2.29.1)
 
 ## Cấu hình
-Dự án sử dụng file cấu hình để chạy test. Để chuẩn bị môi trường chạy:
+Để bảo mật thông tin cá nhân và tránh đưa credentials lên GitHub, file cấu hình gốc `config.properties` được bỏ qua không theo dõi. Dự án cung cấp sẵn một file cấu hình mẫu tại `src/test/resources/config/config.properties.example`.
+
+Để chuẩn bị môi trường chạy test:
+
 
 1. **Sao chép (copy) file cấu hình mẫu:**
    
