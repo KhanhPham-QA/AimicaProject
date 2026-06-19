@@ -16,18 +16,25 @@ Dự án automation test cho hệ thống Aimica (bao gồm UI test với Seleni
 
 ## Cấu hình
 Dự án sử dụng file cấu hình để chạy test. Để chuẩn bị môi trường chạy:
-1. Sao chép (copy) file cấu hình mẫu:
-   ```bash
-   # Nếu dùng macOS/Linux/Git Bash:
-   cp src/test/resources/config/config.properties.example src/test/resources/config/config.properties
+
+1. **Sao chép (copy) file cấu hình mẫu:**
    
-   # Nếu dùng Windows PowerShell:
-   Copy-Item src/test/resources/config/config.properties.example src/test/resources/config/config.properties
-   ```
-2. Mở file `src/test/resources/config/config.properties` vừa tạo và điền các thông tin:
-   - `URL`: Link môi trường test.
-   - `TEST_PHONE`: Số điện thoại test.
-   - `TEST_OTP`: Mã OTP test mặc định (000000).
+Nếu dùng macOS/Linux/Git Bash:
+```bash
+cp src/test/resources/config/config.properties.example src/test/resources/config/config.properties
+```
+
+Nếu dùng Windows PowerShell:
+```powershell
+Copy-Item src/test/resources/config/config.properties.example src/test/resources/config/config.properties
+```
+
+2. **Cấu hình thông tin:**
+Mở file `src/test/resources/config/config.properties` vừa tạo và điền các thông tin:
+- `URL`: Link môi trường test.
+- `TEST_PHONE`: Số điện thoại test.
+- `TEST_OTP`: Mã OTP test mặc định (000000).
+
 
 
 ## Cách chạy test
